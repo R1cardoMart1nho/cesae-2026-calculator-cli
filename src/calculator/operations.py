@@ -12,6 +12,6 @@ def divide(a: float, b: float) -> float:
         raise ValueError("Não é possível dividir por zero.")
     return a / b
 
-### Testes
+### Testes na branch 'tests'
 def average(values):
     return sum(values) / len(values)
