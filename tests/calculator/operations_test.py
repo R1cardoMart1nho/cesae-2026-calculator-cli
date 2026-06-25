@@ -30,5 +30,5 @@ def test_division():
         operations.divide(5, 0)
 
 def test_average():
-    values = [7, 5, 6]
-    assert operations.average(values) == 4
+    values = [4, 5, 6]
+    assert operations.average(values) == 5
