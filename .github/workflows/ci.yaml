@@ -1,0 +1,16 @@
+name: CI (Continuos Integration)
+on: [push, pull_request]
+ 
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v7
+            - name: Install the latest version of uv
+              uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b
+              with:
+                python-version: 3.14.6
+ 
+            - name: Rum Test
+              run: uv run --frozen pytest
+ 
